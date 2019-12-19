@@ -40,7 +40,6 @@ li {
 .logo{
     flex-basis: 150px;
     min-width: 50px;
-    margin: 0 8px;
     max-height: 80px;
 }
 
@@ -87,11 +86,11 @@ li {
 .search-bar {
     position: relative;
     flex-grow: 1;
-    min-width: 150px;
+    /*min-width: 150px;*/
 
 }
 .search-bar .search-input {
-    width: 99%;
+    width: 98%;
     height: 40px;
     padding-left: 8px;
     outline: none;
@@ -146,8 +145,6 @@ input::placeholder {
     display: block;
     background: white;
     border-radius: 5px;
-    min-width: 40px;
-    max-width: 130px;
     height: 40px;
     /*box-sizing: content-box;*/
 }
@@ -159,8 +156,8 @@ input::placeholder {
     height: inherit;
     text-align: center;
     position: relative;
-    padding: 0 20px;
-    width: 100%;
+    padding: 0 10px 0 20px;
+    /*width: 100%;*/
     /*padding: 0 15px;*/
 }
 .login-link:before{
@@ -176,21 +173,23 @@ input::placeholder {
 
 
 .cart {
-    min-width: 84px;
-    max-width: 130px;
+    display: block;
     height: 40px;
+    max-width: 80px;
+    min-width: 40px;
     font-size: 12px;
     background: black;
-    line-height: 2.21;
+    padding: 0 10px 0 20px;
+    line-height: 2.2;
     border-radius: 5px;
 }
 .cart-link {
     color: white;
     display: block;
     position: relative;
-    text-align: center;
     height: inherit;
-    min-width: 100%;
+    text-align: center;
+    /*min-width: 100%;*/
 }
 .cart-link:before{
     content: ' ';
@@ -200,7 +199,8 @@ input::placeholder {
     background-image: url("../img/cart.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    left: 15px;
+    /*left: 15px;*/
+    right: 30px;
     bottom: 10px;
 }
 .services ul {
@@ -211,11 +211,111 @@ input::placeholder {
 }
 .services ul li {
     font-size: 12px;
+    margin-right: 10px;
 }
-/*.services ul li:not(:first-child) {*/
-/*    margin: 0 0 0 10px;*/
-/*}*/
 .header-lower-wrapper{
     margin-top: 8px;
-    /*margin-left: 140px;*/
+}
+.main-content-row{
+    display: flex;
+    flex-direction: column;
+}
+.top-section-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+.top-section-row main{
+    flex-basis: 785px;
+    /* max-width: 785px; */
+    flex-grow: 1;
+}
+.top-section-row nav{
+    /*flex-grow: 1;*/
+    flex-basis: 280px;
+    max-width: 310px;
+    min-width: 180px;
+    overflow: hidden;
+}
+.side li{
+    margin-bottom: 10px;
+}
+.items-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main-item.big{
+    flex-basis:calc(66.6% - 7px);
+    /*min-width: 520px;*/
+    /* 768 - padding left 35px */
+}
+.main-item.small{
+    flex-basis: calc(33.3% - 7px);
+    min-width: 256px;
+}
+.main-item{
+    background-color: #f4f4f4;
+    flex-basis: calc(50% - 7px);
+    min-width: 380px;
+    margin-bottom: 8px;
+    min-height: 225px;
+    margin-left: 7px;
+    flex-grow: 1;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.schedule{
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+.schedule p {
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+.schedule dt {
+    padding-left: 25px;
+}
+.schedule dd{
+    padding-left: 40px;
+}
+.schedule dt:nth-child(even){
+    padding-top: 10px;
+}
+.main-item-inner{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-item-header{
+    flex-basis: 225px;
+}
+.main-item-image{
+    align-self: center;
+}
+.f-bot{
+    align-self: flex-end;
+}
+.block-title{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.block-title.big{
+    font-size: 32px;
+}
+.item-btn{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 0;
+    border: solid 1px transparent;
+    border-radius: 3px;
+    padding: 0.5em 1em;
+    color: #fff;
+    background-color: #000;
 }
