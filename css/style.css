@@ -247,41 +247,26 @@ input::placeholder {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-.main-item.big{
-    flex-basis:calc(66.6% - 7px);
-    /*min-width: 520px;*/
-    /* 768 - padding left 35px */
-}
-.main-item.small{
-    flex-basis: calc(33.3% - 7px);
-    min-width: 256px;
+    margin: -7px;
 }
 .main-item{
-    background-color: #f4f4f4;
-    flex-basis: calc(50% - 7px);
-    min-width: 380px;
-    margin-bottom: 8px;
-    min-height: 225px;
-    margin-left: 7px;
-    flex-grow: 1;
-    overflow: hidden;
-    border-radius: 3px;
+    flex: 1 1 50%;
+    padding-left: 7px;
+    padding-bottom: 7px;
+    box-sizing: border-box;
 }
-.schedule{
-    flex-basis: 100%;
-    flex-grow: 1;
+.small{
+    flex: 1 1 25%;
 }
 .schedule p {
-    padding-left: 40px;
     padding-bottom: 10px;
 }
-.schedule dt {
-    padding-left: 25px;
-}
-.schedule dd{
-    padding-left: 40px;
-}
+/*.schedule dt {*/
+/*    padding-left: 25px;*/
+/*}*/
+/*.schedule dd{*/
+/*    padding-left: 40px;*/
+/*}*/
 .schedule dt:nth-child(even){
     padding-top: 10px;
 }
@@ -289,11 +274,15 @@ input::placeholder {
     display: flex;
     height: 100%;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    background: #eee;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 .main-item-header{
-    flex-basis: 225px;
+    flex: 0 1 50%;
 }
 .main-item-image{
     align-self: center;
