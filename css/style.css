@@ -37,11 +37,6 @@ li {
     list-style-type: none;
 }
 
-.logo{
-    flex-basis: 150px;
-    min-width: 50px;
-    max-height: 80px;
-}
 
 .page-wrapper {
     padding: 0 60px;
@@ -55,8 +50,12 @@ li {
     align-items: center;
     min-height: 90px;
 }
+.logo{
+    flex: 0 1 25%;
+}
+
 .header-inner-row{
-    flex-grow: 1;
+    flex: 1 1 75%;
 }
 .header-inner{
     display: flex;
@@ -67,7 +66,7 @@ li {
     justify-content: space-between;
     align-items: center;
 }
-.header-upper-elements>div{
+.header-upper-elements>div:not(:last-child){
     margin: 0 10px 0 0;
 }
 
@@ -228,17 +227,15 @@ input::placeholder {
     margin-bottom: 30px;
 }
 .top-section-row main{
-    flex-basis: 785px;
-    /* max-width: 785px; */
-    flex-grow: 1;
+    flex: 0 1 75%;
 }
-.top-section-row nav{
-    /*flex-grow: 1;*/
-    flex-basis: 280px;
-    max-width: 310px;
-    min-width: 180px;
-    overflow: hidden;
-}
+/*.top-section-row nav{*/
+/*    !*flex-grow: 1;*!*/
+/*    flex-basis: 280px;*/
+/*    max-width: 310px;*/
+/*    min-width: 180px;*/
+/*    overflow: hidden;*/
+/*}*/
 .side li{
     margin-bottom: 10px;
 }
@@ -247,7 +244,7 @@ input::placeholder {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: -7px;
+    margin-left: -10px;
 }
 .main-item{
     flex: 1 1 50%;
@@ -256,7 +253,7 @@ input::placeholder {
     box-sizing: border-box;
 }
 .small{
-    flex: 1 1 25%;
+    flex: 1 1 20%;
 }
 .schedule p {
     padding-bottom: 10px;
@@ -276,7 +273,7 @@ input::placeholder {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: #eee;
+    background: #F5F5F5;
     padding: 40px 30px;
     box-sizing: border-box;
     border-radius: 5px;
@@ -307,4 +304,49 @@ input::placeholder {
     padding: 0.5em 1em;
     color: #fff;
     background-color: #000;
+}
+.slider-section-row{
+    display: flex;
+    flex-direction: column;
+}
+.slider-header{
+    background: #F5F5F5;
+    font-size: 32px;
+    padding: 10px 30px;
+}
+.slider-items-inner{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.item-inner{
+    border-top: 1px solid lightgray;
+    background: #F5F5F5;
+    flex: 0 0 20%;
+}
+.item-inner:not(:last-child){
+    border-right: 1px solid lightgray;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    padding: 0 35px;
+}
+.item-image{
+    align-self: center;
+    padding: 40px 0;
+}
+.item-name{
+    font-size: 14px;
+    line-height: 20px;
+
+}
+.item-price{
+    font-size: 40px;
+    line-height: 32px;
+    padding: 20px 0;
+}
+.item-image>img{
+    width: 116px;
+    height: 80px;
 }
