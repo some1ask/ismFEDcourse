@@ -17,48 +17,47 @@
             </div>
             <div class="header-inner-row">
                 <div class="header-inner">
-                    <div class="header-upper-wrapper">
-                        <div class="header-upper-elements">
+                    <div class="header-upper-row">
+                        <div class="header-elements">
                             <div class="dropdown">
-                                <select class="dropdown-item" name="" id="">
-                                    <option value="">Producten</option>
-                                    <option value="">Producten2</option>
-                                    <option value="">Producten3</option>
-                                </select>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-menu-item"><a href="">Producten</a></li>
+                                    <li class="dropdown-menu-item"><a href="">News</a></li>
+                                    <li class="dropdown-menu-item"><a href="">Kek</a></li>
+                                    <li class="dropdown-menu-item"><a href="">Shmek</a></li>
+                                </ul>
                             </div>
-                            <div class="search-bar">
+                            <div class="searchbar">
                                 <form action="">
-                                    <input type="text" class="search-input" placeholder="Zoek product">
-                                    <input type="submit" value="">
-                                    <!--search icon ?-->
+                                    <input type="text" placeholder="Zoek product">
+                                    <button type="submit" title="Search"></button>
                                 </form>
                             </div>
-                            <div class="switcher">
-                                <div class="switcher-inner">
-                                    <div class="switcher-tax">
-                                        Excl.<br>BTW
-                                    </div>
-
-                                    <div class="switcher-tax">
-                                        Exac.<br>BTW
-                                    </div>
-                                    <div class="switcher-non-tax"></div>
+                            <div class="toggler">
+                                <div class="toggler-inner">
+                                    <div class="toggle-value">Excl. BTW</div>
+                                    <div class="toggle-value">Incl. BTW</div>
+                                    <div class="switcher"></div>
                                 </div>
                             </div>
-                            <div class="login-btn">
-                                <a href="#" class="login-link">Inloggen</a>
+                            <div class="login">
+                                <a href="">InLoggen</a>
                             </div>
                             <div class="cart">
-                                <a href="" class="cart-link"><span>2</span></a>
+                                <a href="">
+                                    <span class="cart-count">2</span>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="header-lower-wrapper">
-                        <div class="services">
-                            <ul>
-                                <li><img src="img/like.png" alt=""> Uitstekende klantenservice</li>
-                                <li><img src="img/van.png" alt=""> Gratis levering of afhalen in onze shops</li>
-                                <li><img src="img/phone.png" alt=""> Gratis levering of afhalen in onze shops</li>
+                    <div class="header-lower-row">
+                        <div class="service-block">
+                            <ul class="service-list">
+                                <li class="service-item"><i class="fa fa-thumbs-up"></i>Uitstekende klantenservice</li>
+                                <li class="service-item"><i class="fa fa-truck"></i> levering of afhalen in onze shops
+                                </li>
+                                <li class="service-item"><i class="fa fa-phone"></i> levering of afhalen in onze shops
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -99,25 +98,44 @@
                                         <div class="block-title big">Gehoorbescherming 20% korting</div>
                                         <a href="#" class="item-btn">Bestel nu</a>
                                     </div>
-                                    <div class="main-item-image f-bot">
-                                        <img src="img/headphones.png" alt="" height="145px" width="136px">
+                                    <div class="main-item-image-big">
+                                        <img src="img/headphones.png" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="main-item small">
                                 <div class="main-item-inner">
                                     <div class="schedule">
-                                        <p>Heb je een vraag?<br>
-                                            Wij staan voor je klaar!</p>
-                                        <dl>
-                                            <dt><img src="img/clock.png" alt=""> Openingstijden:</dt>
-                                            <dd>Ma-Vr 08.00 uur - 18.00 uur</dd>
-                                            <dd>Za 08.00 uur - 16.00 uur</dd>
-
-                                            <dt><img src="img/phone.png" alt=""> Telefonisch bereikbaar:</dt>
-                                            <dd> Ma-Vr 08.00 uur - 18.00 uur</dd>
-                                            <dd>Za 08.00 uur - 16.00 uur</dd>
-                                        </dl>
+                                        <div class="schedule-header">
+                                            <p>Heb je een vraag?</p>
+                                            <p>Wij staan voor je klaar!</p>
+                                        </div>
+                                        <div class="schedule-scheme">
+                                            <div class="schedule-scheme-top">
+                                                <span class="schedule-title open">Openingstijden:</span>
+                                            </div>
+                                            <div class="schedule-scheme-bot">
+                                                <dl class="schedule-info">
+                                                    <dt class="days">Ma-Vr</dt>
+                                                    <dd class="hours">08.00 uur - 18.00 uur</dd>
+                                                    <dt class="days">Za</dt>
+                                                    <dd class="hours">08.00 uur - 18.00 uur</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div class="schedule-scheme">
+                                            <div class="schedule-scheme-top">
+                                                <span class="schedule-title phone">Telefonisch bereikbaar:</span>
+                                            </div>
+                                            <div class="schedule-scheme-bot">
+                                                <dl class="schedule-info">
+                                                    <dt class="days">Ma-Vr</dt>
+                                                    <dd class="hours">08.00 uur - 18.00 uur</dd>
+                                                    <dt class="days">Za</dt>
+                                                    <dd class="hours">08.00 uur - 18.00 uur</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -127,8 +145,7 @@
                                         <div class="block-title">Schuurmachines Vanaf € 150,-</div>
                                         <a href="#" class="item-btn">Bestel nu</a>
                                     </div>
-                                    <div class="main-item-image"><img src="img/grinder.png" alt="" width="88px"
-                                                                      height="83px"></div>
+                                    <div class="main-item-image-small"><img src="img/grinder.png" alt=""></div>
                                 </div>
                             </div>
                             <div class="main-item">
@@ -137,8 +154,7 @@
                                         <div class="block-title">Rookmelders Vanaf € 50,-</div>
                                         <a href="#" class="item-btn">Bestel nu</a>
                                     </div>
-                                    <div class="main-item-image"><img src="img/alarm.png" alt="" width="88px"
-                                                                      height="83px"></div>
+                                    <div class="main-item-image-small"><img src="img/alarm.png" alt=""></div>
                                 </div>
                             </div>
                         </div>
