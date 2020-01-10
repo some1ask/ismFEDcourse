@@ -1,0 +1,44 @@
+@media screen and (max-width: 1024px){
+    .service-list{
+        margin-left: 0;
+    }
+    .service-list li:first-child{
+        margin-left: 128px;
+    }
+    .searchbar input {
+        width: 89%;
+    }
+    .promotion-item{
+        flex-basis: 100%;
+    }
+    .partners{
+        justify-content: flex-end;
+    }
+    .dropdown{
+        min-width: 120px;
+    }
+}
+@media screen and (max-width: 768px){
+    .page-wrapper{
+        padding: 0 30px;
+    }
+    .header-elements{
+        flex-wrap: wrap;
+        font-size: 12px;
+        justify-content: flex-end;
+    }
+    .searchbar{
+        /*flex-basis: 65%;*/
+        min-width: 380px;
+        flex-grow: 1;
+    }
+    .searchbar input{
+        width: 100%;
+    }
+    .toggler,.login,.cart{
+        margin-top: 10px;
+    }
+    .cart{
+        margin-right: 8px;
+    }
+}

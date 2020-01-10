@@ -7,7 +7,6 @@
     font-weight: 900;
     font-style: normal;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -74,15 +73,15 @@ li {
 }
 
 .dropdown {
+    border-radius: 3px;
+    height: 40px;
+    background: black;
     min-width: 156px;
     max-width: 156px;
 }
 
 .dropdown-menu-item {
-    height: 40px;
-    background: black;
     position: relative;
-    border-radius: 3px;
     display: none;
 }
 
@@ -122,9 +121,10 @@ li {
 
 .searchbar input {
     width: 93%;
+    height: 40px;
     border: none;
     border-radius: 3px;
-    padding: 10px 25px 10px 10px;
+    padding: 0 25px 0 10px;
 }
 
 .searchbar button {
@@ -147,20 +147,21 @@ li {
     background: white;
     border-radius: 3px;
     min-width: 80px;
+    height: 40px;
 }
 
 .toggler-inner {
     display: flex;
     position: relative;
+    height: inherit;
 }
 
 .toggle-value {
     font-size: 12px;
-    display: block;
-    padding-top: 3px;
-    justify-content: center;
+    align-self: center;
     text-align: center;
     max-width: 40px;
+    height: inherit;
     flex: 1 1 50%;
 }
 
@@ -293,11 +294,9 @@ li {
 
 .small {
     flex: 1 1 35%;
-    flex-grow: 1;
 }
 .schedule-scheme{
     margin-top: 15px;
-
 }
 .schedule-info{
     width: 100%;
@@ -394,6 +393,7 @@ bot {
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
+    position: relative;
 }
 
 .slider-header {
@@ -406,6 +406,25 @@ bot {
     display: flex;
     position: relative;
     overflow: hidden;
+}
+.slider-button{
+    position:absolute;
+    border-radius: 50%;
+    min-width: 35px;
+    min-height: 35px;
+    background: #FFC600;
+    font-size: 21px;
+    outline: none;
+    border: none;
+    color: white;
+    z-index: 3;
+    top: 45%;
+}
+.left{
+    left: -22px;
+}
+.right{
+    right: -22px;
 }
 
 .item-inner {
@@ -422,23 +441,25 @@ bot {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 0 30px;
+    align-items: flex-start;
+    padding: 40px 20px;
 }
 
 .item-image {
     align-self: center;
-    padding: 40px 0;
+    margin-bottom: 15px;
+    /*padding: 40px 0;*/
 }
 
 .item-name {
     font-size: 14px;
     line-height: 20px;
-
+    margin-bottom: 15px;
 }
 .item-price {
     font-size: 35px;
     line-height: 32px;
-    padding: 20px 0;
+    /*padding: 20px 0;*/
 }
 .item-image > img {
     width: 116px;
@@ -454,7 +475,7 @@ bot {
 }
 .promotion-item{
     position: relative;
-    /*flex: 0 1 49.7%;*/
+    flex-basis: 49.7%;
 }
 .promotion-image img{
     width: 100%;
@@ -549,7 +570,7 @@ bot {
 }
 .footer-menu-item{
     display: inline-block;
-    padding: 0 5px;
+    padding-left:5px;
     border-left: 2px solid black;
     /*text-decoration: underline;*/
 }
