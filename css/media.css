@@ -39,6 +39,7 @@
         flex-wrap: wrap;
         font-size: 12px;
         justify-content: flex-end;
+        margin-top: 5px;
     }
 
     .searchbar {
