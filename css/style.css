@@ -131,8 +131,8 @@ li {
     position: absolute;
     width: 14px;
     height: 14px;
-    top: 12px;
-    right: 10px;
+    top: 40%;
+    right: 5%;
     border: none;
     background: transparent;
 }
