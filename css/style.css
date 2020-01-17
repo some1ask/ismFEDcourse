@@ -439,6 +439,7 @@ dd.hours{
     border-top: 1px solid lightgray;
     background: #F5F5F5;
     flex: 0 0 20%;
+    box-sizing: border-box;
 }
 
 .item-inner:not(:last-child) {
