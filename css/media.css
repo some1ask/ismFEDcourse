@@ -103,6 +103,10 @@
 /*Mobile L*/
 
 @media screen and (max-width: 425px) {
+    .slider-button{
+        border-radius: unset;
+        opacity: 0.7;
+    }
     .item-inner{
         flex: 1 0 100%;
     }
@@ -197,6 +201,9 @@
 }
 /*Mobile S*/
 @media screen and (max-width: 320px){
+    .dropdown{
+        margin-bottom: 8px;
+    }
     .block-title.big {
         font-size: 17px;
     }

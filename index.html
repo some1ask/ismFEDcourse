@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" type="text/css" href="fonts/FontAwesome-4.7.0/css/font-awesome.min.css">
+    <script src="js/slider.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -158,16 +159,16 @@
             </div>
         </section>
         <section id="slider-section">
+            <button class="slider-button left" data-btn="left">
+                <i class="fa fa-chevron-left"></i>
+            </button>
+            <button class="slider-button right" data-btn="right">
+                <i class="fa fa-chevron-right"></i>
+            </button>
             <div class="slider-section-row">
-                <button class="slider-button left">
-                    <i class="fa fa-chevron-left"></i>
-                </button>
-                <button class="slider-button right">
-                    <i class="fa fa-chevron-right"></i>
-                </button>
                 <div class="slider-header">Bestsellers</div>
-                <div class="slider-items">
-                    <div class="slider-items-inner">
+                <div class="slider-items"  >
+                    <div class="slider-items-inner" id="carouselWrapper">
                         <div class="item-inner">
                             <div class="item">
                                 <div class="item-image">
@@ -233,6 +234,17 @@
                                     Ak450970
                                 </div>
                                 <div class="item-price">€ 50,-</div>
+                            </div>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item">
+                                <div class="item-image">
+                                    <img src="img/grinder.png" alt="">
+                                </div>
+                                <div class="item-name">Schuurmachine FERM
+                                    Ak450970
+                                </div>
+                                <div class="item-price">€ 150,-</div>
                             </div>
                         </div>
                     </div>
@@ -338,5 +350,6 @@
         </div>
     </div>
 </footer>
+
 </body>
 </html>

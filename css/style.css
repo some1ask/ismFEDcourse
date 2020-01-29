@@ -398,10 +398,17 @@ dd.hours{
     color: #fff;
     background-color: #000;
 }
-
+#slider-section{
+    position: relative;
+}
+#carouselWrapper{
+    transition: transform 0.5s ease-in-out;
+}
 .slider-section-row {
     margin-bottom: 50px;
     position: relative;
+    overflow: hidden;
+
 }
 
 .slider-header {
@@ -413,7 +420,7 @@ dd.hours{
 .slider-items-inner {
     display: flex;
     position: relative;
-    overflow: hidden;
+    transform: translate(0%);
 }
 .slider-button{
     position:absolute;
@@ -592,3 +599,17 @@ dd.hours{
     border: none;
 }
 
+/*for select
+margin: 0;
+padding: 0;
+width: 100%;
+background: black;
+outline: none;
+border: none;
+color: white;
+text-align: center;
+display: flex;
+margin-top: 15px;
+justify-content: center;
+
+*/
