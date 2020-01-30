@@ -420,7 +420,6 @@ dd.hours{
 .slider-items-inner {
     display: flex;
     position: relative;
-    transform: translate(0%);
 }
 .slider-button{
     position:absolute;
@@ -445,7 +444,7 @@ dd.hours{
 .item-inner {
     border-top: 1px solid lightgray;
     background: #F5F5F5;
-    flex: 0 0 20%;
+    flex: 1 0 20%;
     box-sizing: border-box;
 }
 
@@ -599,17 +598,13 @@ dd.hours{
     border: none;
 }
 
-/*for select
-margin: 0;
-padding: 0;
-width: 100%;
-background: black;
-outline: none;
-border: none;
-color: white;
-text-align: center;
-display: flex;
-margin-top: 15px;
-justify-content: center;
+.dropdown >select{
+    width: 100%;
+    font-weight: bold;
+    background: black;
+    outline: none;
+    border: none;
+    color: white;
+    margin-top: 10px;
+}
 
-*/
